@@ -79,7 +79,7 @@ jobs:
             if [ -z "$LATEST_TAG" ]; then
               LATEST_TAG="v1.5.9-r0"
             fi
-            
+            LATEST_TAG="v1.5.9-r0"
             NEW_TAG=$(echo "$LATEST_TAG" | awk -F'-r' '{suffix=$2; if (!suffix) suffix=0; suffix++; printf "%s-r%d", $1, suffix}')
     
             echo "New tag: $NEW_TAG"
